@@ -1,0 +1,16 @@
+# MediKiosk configuration
+# 1. Copy this file to "config.properties" (same folder as pom.xml)
+# 2. Put YOUR MySQL password below.
+# config.properties is listed in .gitignore, so your password is never committed.
+#
+# Instead of a file you may also set environment variables:
+#   MEDIKIOSK_DB_URL, MEDIKIOSK_DB_USER, MEDIKIOSK_DB_PASSWORD, MEDIKIOSK_UPLOAD_DIR
+
+db.url=jdbc:mysql://localhost:3306/medikiosk?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=root
+db.password=CHANGE_ME
+
+# Folder where copies of uploaded medical documents are stored
+upload.dir=uploads
+# Maximum upload size in megabytes
+upload.max.mb=10
